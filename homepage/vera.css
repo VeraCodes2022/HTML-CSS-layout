@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    overflow:visible;
+}  
+
+ul li{list-style: none;}
+
+.navi{
+    line-height:80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo{flex-grow:1;}
+.menu{flex-grow:1;}
+.search{flex-grow:2;}
+.rightside{flex-grow:1;}
+
+
+.logo{
+   width:100px;
+}
+
+
+.menu{margin-left: 40px;}
+
+.menu>a {
+        display: inline-block;
+        font-size:18px;
+        padding-right: 40px;
+}
+
+
+.search{
+        display: flex;
+        justify-content: center;
+}
+
+input{flex-grow: 1;}
+.lens{flex-grow: 1;}
+input{  
+    display: block;
+    width: 220px;
+    height: 28px;
+}
+   
+
+.lens{
+    display: block;
+    width: 40px;   
+}
+
+
+
+.rightside{
+       line-height: 80px;
+       padding-left: 100px;
+       
+}
+
+.pic{
+     padding-right: 20px;
+ 
+}
+#photo{ 
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;   
+}
+
+
+/* 依据铃铛去定位红点 */
+#bell{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    background-image: url(images/ld.png);
+    background-repeat: no-repeat;
+    vertical-align:middle;
+    padding-right: 30px;
+ 
+
+}
+
+.redspot{ 
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius:50%;
+    position: absolute;
+    top:0px;
+    left:15px;
+
+}
+
+
+.perscenter,.doon {
+    font-size: 12px;
+    /* border: 1px solid red; */
+    vertical-align:middle;
+    padding-right: 20px;
+
+
+}
+
+/* banner部分 */
+
+#banner{
+    width: 100%;
+}
+.bannerare{
+    position: relative;
+}
+.frontend{
+    display: flex;
+    justify-content: center;
+    width:160px;
+    height:480px;
+    background-color:#0f0a47;
+    opacity: 0.9;
+    flex-direction: column;
+    position: absolute;
+    top:0px;
+    left:80px;
+    padding-top: 15px;
+}
+
+.item>div{color: white;}
+.item{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+/* 课程表 */
+.mytimetable{
+    text-align:left;
+    width: 200px;
+    height:280px;
+    background-color:white;
+    opacity: 0.9;
+    position: absolute;
+    right:100px;
+    top:120px;
+}
+
+h3, p, span,.quanbu{color:#797b7c;}
+
+h3{
+    background-color: #a4cde7;
+    text-align: center;
+    padding:5px;
+}
+
+p{
+    font-size: 14px;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+
+span{
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+
+.allcourses{
+    position:absolute;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #a4cde7;
+    margin-top:20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    bottom:20px;
+    left: 25px;
+}
+/* 线条 */
+.line{
+    border-bottom: 1px solid #8c8d8e;
+    margin: 10px 0px;
+}
+.all{align-self: center;}
+
+/* 精品推荐蓝色 */
+.middlebar-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px  30px;
+    box-shadow: 6px 6px 4px #d1d2d2;
+}
+
+/* 精品推荐标题  */
+.subtitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px  0px;
+}
+
+
+.recommended{
+    font-size:16px;
+    color:#42a5f8;
+} 
+
+#jq{
+    font-size: 16px;
+    color:#8c8d8e; 
+}
+.modify{
+    display:block;
+    float: right;
+    padding-right:110px;
+    color:#42a5f8;
+    font-size:12px;
+}
+
+/* 精品推荐标题*/
+ #recom{
+    font-size:18px;
+    padding-left:30px;
+    color:#8c8d8e;
+} 
+#chckall{
+    font-size: 12px;
+    color:#8c8d8e;
+    padding-right:137px;
+}
+/* 课程列表 */
+.courselists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width:260px;
+    margin:6px 6px;
+    box-shadow:#e1dede 6px 6px 3px;
+}
+
+.iamge{
+    width:100%;
+}
+.course{
+    width:100%;
+    height:100px;
+    padding:15px;
+  } 
+
+
+h5{
+    color:rgb(247, 130, 46);
+    padding-top: 14px;
+}
+
+h6{
+    color:#8c8d8e;
+}
+h4{
+    color:#8c8d8e;
+}  
+
+/* footer页脚的设置 */
+.footer{display: flex;}
+.right{flex-grow: 2;}
+.left{flex-grow: 1;}
+
+.right{
+        display: flex;
+        justify-content:center;
+        padding-left: 20px;
+        padding-top:20px;
+}
+
+.right ul li{
+        font-size: 12px;
+        color:#797b7c;
+        padding: 1px 80px;
+}
+
+#about{
+        font-size: 14px;
+        padding-bottom:5px;
+}
+
+
+.left{padding-left: 80px;}
+
+.left p{
+        padding:0;
+        margin:0;
+        padding: 20px 0  20px 0;
+        font-size: 12px;
+}
+
+.footer{margin: 30px 0 30px 0;}
+
+.frame{
+    width:120px;
+    height:30px;
+    border: solid 1px #42a5f8;
+    display: flex;
+    justify-content: center;
+}
+
+.download{
+    align-self: center;
+    color:#42a5f8; 
+    font-size: 12px;
+}
